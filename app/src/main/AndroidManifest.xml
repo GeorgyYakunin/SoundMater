@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.meter.sound">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="example.meter.sound.SoundApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="example.meter.sound.ActivitySplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="example.meter.sound.ActivityMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="example.meter.sound.ActivityClickForStart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="example.meter.sound.ActivityExitFromApp"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="example.meter.sound.soundmeter.ActivityAudioHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="example.meter.sound.tonegenerator.ActivityGeneratorOfWaveTone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="example.meter.sound.soundmeter.ActivitySoundAudioMeter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="example.meter.sound.ActivityInfoAboutSound"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

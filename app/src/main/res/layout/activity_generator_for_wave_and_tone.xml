@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dark_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.9"
+                android:background="@color/dark_background">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="?actionBarSize"
+                    app:theme="@style/ToolbarColoredBackArrow">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/quick_medium"
+                        android:text="@string/tone_generator"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+                </androidx.appcompat.widget.Toolbar>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="520dp"
+                        android:layout_margin="6dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/carrierWaveLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="42dp"
+                            android:gravity="center|left">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:fontFamily="@font/quick_medium"
+                                android:text="@string/carrier_wave"
+                                android:textColor="@color/light_purple"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/spCarrierWaveForm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="154dp"
+                                android:fontFamily="@font/quick_medium"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/modulatorWaveLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="42dp"
+                                android:gravity="center|left">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12dp"
+                                    android:fontFamily="@font/quick_medium"
+                                    android:text="@string/modulator_wave"
+                                    android:textColor="@color/light_purple"
+                                    android:textSize="15sp" />
+
+                                <Spinner
+                                    android:id="@+id/spModulatorWaveForm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="128dp"
+                                    android:fontFamily="@font/quick_medium"
+                                    android:gravity="center" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="42dp"
+                                android:gravity="center|left">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12dp"
+                                    android:fontFamily="@font/quick_medium"
+                                    android:text="@string/modulation_type"
+                                    android:textColor="@color/light_purple"
+                                    android:textSize="15sp" />
+
+                                <Spinner
+                                    android:id="@+id/spModulationType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="123.0dip"
+                                    android:fontFamily="@font/quick_medium"
+                                    android:gravity="center"
+                                    android:theme="@style/Spinner" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="64dp"
+                                android:gravity="center">
+
+                                <CheckBox
+                                    android:id="@+id/cbActivateModulation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quick_medium"
+                                    android:text="@string/activate_modulation"
+                                    android:textColor="@color/light_purple"
+                                    android:textSize="15sp"
+                                    android:theme="@style/MyAppTheme" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="84dp"
+                            android:weightSum="1.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.5"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:id="@+id/btnPlay"
+                                    android:layout_width="144dp"
+                                    android:layout_height="42dp"
+                                    android:background="@drawable/btn_bg_play_stop"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/quick_bold"
+                                        android:text="@string/play"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.5"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:id="@+id/btnStop"
+                                    android:layout_width="144dp"
+                                    android:layout_height="42dp"
+                                    android:background="@drawable/btn_bg_play_stop"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/quick_bold"
+                                        android:text="@string/stop"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/btn_bg_value">
+
+                                <com.github.mikephil.charting.charts.LineChart
+                                    android:id="@+id/graph"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="210dp"
+                                    android:layout_margin="12dp"
+                                    android:layout_marginTop="12dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dark_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.9"
+                android:background="@color/dark_background">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="?actionBarSize"
+                    app:theme="@style/ToolbarColoredBackArrow">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/quick_medium"
+                        android:text="@string/sound_meter"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+                </androidx.appcompat.widget.Toolbar>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1"
+                android:orientation="vertical"
+                android:weightSum="1.0">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.55"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <example.meter.sound.soundmeter.ColorArcProgressBar
+                                android:id="@+id/bar1"
+                                android:layout_width="184dp"
+                                android:layout_height="184dp"
+                                android:layout_centerInParent="true" />
+
+                            <TextView
+                                android:id="@+id/txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/quick_medium"
+                                android:text="@string/mkajiswi"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_below="@+id/txt"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="14dp"
+                                android:src="@drawable/sound_icon" />
+
+                            <TextView
+                                android:id="@+id/guessSurroundingTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="64dp"
+                                android:fontFamily="@font/quick_medium"
+                                android:text="@string/save_files"
+                                android:textColor="@color/grey"
+                                android:textSize="13sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.7">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.38"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                android:background="@drawable/btn_circle_ring"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/imageViewExamine"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:onClick="ShowExaminePopup"
+                                    android:src="@drawable/decibel_scale_icon" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/quick_medium"
+                                android:text="@string/decibel_scale"
+                                android:textColor="@color/white"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.24"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewPlayPause"
+                                android:layout_width="32dp"
+                                android:layout_height="42dp"
+                                android:paddingBottom="6.0dip"
+                                android:src="@drawable/play_icon"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:id="@+id/playPause"
+                                android:layout_width="164dp"
+                                android:layout_height="42dp"
+                                android:layout_marginBottom="12dp"
+                                android:background="@drawable/btn_play"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/textViewPlayPause"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quick_bold"
+                                    android:text="@string/pause"
+                                    android:textColor="@color/white"
+                                    android:textSize="17sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.38"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                android:background="@drawable/btn_circle_ring"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/saveAudioImageView"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/save_file_icon" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/quick_medium"
+                                android:text="@string/save_files"
+                                android:textColor="@color/white"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.45"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.6"
+                        android:background="#ff071b29">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <example.meter.sound.soundmeter.GraphView
+                                android:id="@+id/graphView"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentBottom="true"
+                                android:fillViewport="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.4"
+                        android:background="@color/dark_background"
+                        android:orientation="vertical"
+                        android:weightSum="1.0">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="12dp"
+                            android:layout_weight="0.4">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/btn_bg_value"
+                                android:weightSum="1.0">
+
+                                <LinearLayout
+                                    android:id="@+id/minView"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="0.33"
+                                    android:weightSum="1.0">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_margin="6dp"
+                                        android:layout_weight="0.25"
+                                        android:gravity="center|top"
+                                        android:orientation="vertical"
+                                        android:weightSum="1.0">
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="0.7"
+                                            android:gravity="center|left">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="6dp"
+                                                android:fontFamily="@font/quick_regular"
+                                                android:text="@string/minimum"
+                                                android:textColor="@color/bright_red"
+                                                android:textSize="11sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="0.3">
+
+                                            <TextView
+                                                android:id="@+id/textViewMinValue"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="6dp"
+                                                android:fontFamily="@font/quick_medium"
+                                                android:text="@string/save_files"
+                                                android:textColor="@color/white"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/quick_medium"
+                                                android:text="@string/db"
+                                                android:textColor="@color/white"
+                                                android:textSize="9sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="0.75"
+                                        android:gravity="bottom|center|left">
+
+                                        <ImageView
+                                            android:layout_width="24dp"
+                                            android:layout_height="24dp"
+                                            android:layout_marginBottom="12dp"
+                                            android:src="@drawable/minimum_sound_icon" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="3dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:background="@color/dark_blue_bg" />
+
+                                <LinearLayout
+                                    android:id="@+id/avgView"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="0.34"
+                                    android:weightSum="1.0">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_margin="6dp"
+                                        android:layout_weight="0.25"
+                                        android:gravity="center|top"
+                                        android:orientation="vertical"
+                                        android:weightSum="1.0">
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="0.7"
+                                            android:gravity="center|left">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="6dp"
+                                                android:fontFamily="@font/quick_regular"
+                                                android:text="@string/avg_speed"
+                                                android:textColor="@color/light_orange"
+                                                android:textSize="11sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="0.3">
+
+                                            <TextView
+                                                android:id="@+id/textViewAvgValue"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="6dp"
+                                                android:fontFamily="@font/quick_medium"
+                                                android:text="@string/save_files"
+                                                android:textColor="@color/white"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/quick_medium"
+                                                android:text="@string/db"
+                                                android:textColor="@color/white"
+                                                android:textSize="9sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="0.75"
+                                        android:gravity="bottom|center|left">
+
+                                        <ImageView
+                                            android:layout_width="24dp"
+                                            android:layout_height="24dp"
+                                            android:layout_marginBottom="12dp"
+                                            android:src="@drawable/avg_speed_sound_icon" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="3dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:background="@color/dark_blue_bg"
+                                    />
+
+                                <LinearLayout
+                                    android:id="@+id/maxView"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="0.33"
+                                    android:weightSum="1.0">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_margin="6dp"
+                                        android:layout_weight="0.25"
+                                        android:gravity="center|top"
+                                        android:orientation="vertical"
+                                        android:weightSum="1.0">
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="0.7"
+                                            android:gravity="center|left">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="6dp"
+                                                android:fontFamily="@font/quick_regular"
+                                                android:text="@string/maximum"
+                                                android:textColor="@color/bright_yellow"
+                                                android:textSize="11sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="0.3">
+
+                                            <TextView
+                                                android:id="@+id/textViewMaxValue"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="6dp"
+                                                android:fontFamily="@font/quick_medium"
+                                                android:text="@string/save_files"
+                                                android:textColor="@color/white"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/quick_medium"
+                                                android:text="@string/db"
+                                                android:textColor="@color/white"
+                                                android:textSize="9sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="0.75"
+                                        android:gravity="bottom|center|left">
+
+                                        <ImageView
+                                            android:layout_width="24dp"
+                                            android:layout_height="24dp"
+                                            android:layout_marginBottom="12dp"
+                                            android:src="@drawable/maximum_sound_icon" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.6">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/bg_bottomview"
+                                android:orientation="horizontal"
+                                android:weightSum="4.0">
+
+                                <LinearLayout
+                                    android:id="@+id/calibrate"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0"
+                                    android:gravity="center|top"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewCalibrate"
+                                        android:layout_width="42dp"
+                                        android:layout_height="42dp"
+                                        android:layout_marginTop="12dp"
+                                        android:tint="@color/bright_red"
+                                        android:src="@drawable/calibrate_icon" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/quick_medium"
+                                        android:text="@string/calibrate"
+                                        android:textColor="@color/bright_red"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/threshold"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0"
+                                    android:gravity="center|top"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewThreshold"
+                                        android:layout_width="42dp"
+                                        android:layout_height="42dp"
+                                        android:layout_marginTop="12dp"
+                                        android:tint="@color/bright_red"
+                                        android:src="@drawable/threshold_icon1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/quick_medium"
+                                        android:text="@string/threshold"
+                                        android:textColor="@color/bright_red"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/history"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0"
+                                    android:gravity="center|top"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewHistory"
+                                        android:layout_width="42dp"
+                                        android:layout_height="42dp"
+                                        android:layout_marginTop="12dp"
+                                        android:tint="@color/bright_red"
+                                        android:src="@drawable/history_icon" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/quick_medium"
+                                        android:text="@string/history"
+                                        android:textColor="@color/bright_red"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/refresh"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0"
+                                    android:gravity="center|top"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageViewRefresh"
+                                        android:layout_width="42dp"
+                                        android:layout_height="42dp"
+                                        android:layout_marginTop="12dp"
+                                        android:tint="@color/bright_red"
+                                        android:src="@drawable/refresh_icon" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/quick_medium"
+                                        android:text="@string/refresh"
+                                        android:textColor="@color/bright_red"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

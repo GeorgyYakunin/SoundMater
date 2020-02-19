@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dark_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.9"
+                android:background="@color/dark_background_2"
+                >
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="?actionBarSize"
+                    app:theme="@style/ToolbarColoredBackArrow">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+                </androidx.appcompat.widget.Toolbar>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="32dp"
+                android:layout_weight="0.1"
+                android:orientation="vertical"
+                android:weightSum="1.0">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.65"
+                    android:background="@drawable/nav_bar_bg"
+                    android:gravity="center|top"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="144dp"
+                        android:layout_height="112dp"
+                        android:src="@drawable/nav_bar_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quick_medium"
+                        android:text="@string/sound_meter_all_caps"
+                        android:textColor="#ffC5E984"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quick_light"
+                        android:text="@string/with_the_sound_meter_app_you_can"
+                        android:textColor="@color/white"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quick_light"
+                        android:text="@string/check_the_level_of_sound_in_decibels"
+                        android:textColor="@color/white"
+                        android:textSize="9sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.35"
+                    android:orientation="vertical"
+                    android:weightSum="3.0">
+
+                    <LinearLayout
+                        android:id="@+id/btn_sound_meter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@color/bright_red"
+                        android:weightSum="1.0">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="6dp"
+                            android:layout_weight="0.3"
+                            android:orientation="vertical"
+                            android:weightSum="1.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.4"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="22dp"
+                                    android:layout_marginTop="6dp"
+                                    android:fontFamily="@font/quick_regular"
+                                    android:text="@string/sound_meter"
+                                    android:textColor="@color/white"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="12dp"
+                            android:layout_weight="0.7"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="84dp"
+                                android:layout_height="84dp"
+                                android:src="@drawable/sound_meter_icon" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_tone_generator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@color/light_orange"
+                        android:weightSum="1.0">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="6dp"
+                            android:layout_weight="0.3"
+                            android:orientation="vertical"
+                            android:weightSum="1.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.4"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="32dp"
+                                    android:layout_marginTop="6dp"
+                                    android:fontFamily="@font/quick_regular"
+                                    android:text="@string/tone_generator"
+                                    android:textColor="@color/white"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="12dp"
+                            android:layout_weight="0.7"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="84dp"
+                                android:layout_height="84dp"
+                                android:src="@drawable/tone_generator_icon" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_sound_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@color/bright_yellow"
+                        android:weightSum="1.0">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="6dp"
+                            android:layout_weight="0.3"
+                            android:orientation="vertical"
+                            android:weightSum="1.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.4"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="22dp"
+                                    android:fontFamily="@font/quick_regular"
+                                    android:text="@string/sound_info"
+                                    android:textColor="@color/white"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="12dp"
+                            android:layout_weight="0.7"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="84dp"
+                                android:layout_height="84dp"
+                                android:src="@drawable/sound_info_icon" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

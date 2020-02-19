@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#FFF8501F</color>
+    <color name="colorActive">#FF888788</color>
+    <color name="colorBackgroundGraph">#FF110A1C</color>
+    <color name="colorBlueMax">#FF6292FF</color>
+    <color name="colorBlueMid">#FF398BBF</color>
+    <color name="colorBlueMin">#FF6A38FF</color>
+    <color name="colorHistoryActiveListItem">#ff191408</color>
+    <color name="colorNotActive">#FF812F</color>
+    <color name="colorPopupBackground">#FF140C23</color>
+    <color name="colorPrimary">#ff002012</color>
+    <color name="colorPrimaryDark">#ff050521</color>
+    <color name="colorRed">#FFBF3030</color>
+    <color name="colorSideText">#FF80778E</color>
+    <color name="dark_background">#ff050626</color>
+    <color name="dark_background_2">#ff050626</color>
+    <color name="white">#ffffff</color>
+    <color name="bright_red">#FE6277</color>
+    <color name="light_orange">#FEAB62</color>
+    <color name="bright_yellow">#FEF962</color>
+    <color name="grey">#787878</color>
+    <color name="dark_blue_bg">#FF17174B</color>
+    <color name="light_purple">#FF85799A</color>
+    <color name="black">#ff000000</color>
+    <color name="light_yellow">#FFE566</color>
+    <color name="light_grey">#FF3C3C3C</color>
+    <color name="blue">#FF295E76</color>
+    <color name="dark_grey">#FF1B1B1B</color>
+    <color name="medium_grey">#565656</color>
+    <color name="lighter_grey">#7E7E7E</color>
+    <color name="yellow">#FFA2D139</color>
+    <color name="dirty_white">#FFBCBCBC</color>
+    <color name="dark_orange">#FFE29C3F</color>
+    <color name="orange">#FFFFAD48</color>
+    <color name="green_turquoise">#FF1D8EE5</color>
+    <color name="green">#FF3F9C3A</color>
+    <color name="blue_grey">#FF6A6A8B</color>
+    <color name="bright_orange">#FFEFB013</color>
+
+    <color name="decibel">#FF812F</color>
+
+    <color name="design_default_color_primary">#FF5A4388</color>
+    <color name="design_default_color_primary_dark">#FF4D3677</color>
+
+    <color name="place_autocomplete_prediction_primary_text">#FF1A1A1A</color>
+    <color name="place_autocomplete_prediction_primary_text_highlight">#FF5E5E5E</color>
+    <color name="place_autocomplete_prediction_secondary_text">#FF5E5E5E</color>
+    <color name="place_autocomplete_search_hint">#ff989898</color>
+    <color name="place_autocomplete_search_text">#FF1A1A1A</color>
+    <color name="place_autocomplete_separator">#1f000000</color>
+    <color name="playtxtcolor">#ffffffff</color>
+    <color name="pp_color">#FF322C42</color>
+
+    <color name="progressBarColor">#FF2144FE</color>
+
+    <color name="status_color">#FF15151C</color>
+    <color name="status_color_tap">#FFD1D1D5</color>
+
+    <color name="wallet_bright_foreground_disabled_holo_light">#FF8F8F8F</color>
+    <color name="wallet_bright_foreground_holo_dark">#FFC3C3C3</color>
+    <color name="wallet_bright_foreground_holo_light">#ff000000</color>
+    <color name="wallet_dim_foreground_disabled_holo_dark">#80989898</color>
+    <color name="wallet_dim_foreground_holo_dark">#ff989898</color>
+    <color name="wallet_highlighted_text_holo_dark">#664890AC</color>
+    <color name="wallet_highlighted_text_holo_light">#665261AF</color>
+    <color name="wallet_hint_foreground_holo_dark">#ff676767</color>
+    <color name="wallet_hint_foreground_holo_light">#ff676767</color>
+    <color name="wallet_holo_blue_light">#FF7287F4</color>
+    <color name="wallet_link_text_light">#FF0085EB</color>
+</resources>

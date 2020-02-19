@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="modulation_types">
+        <item>Ring Modulation</item>
+        <item>Amplitude Modulation</item>
+    </array>
+    <array name="wave_forms">
+        <item>Sine</item>
+        <item>Square</item>
+        <item>Pulse</item>
+        <item>Triangle</item>
+        <item>Sawtooth</item>
+    </array>
+</resources>

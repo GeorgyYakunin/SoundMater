@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayoutHistoryListLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="154dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="12dp"
+        android:background="@drawable/btn_bg_value"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8"
+            android:gravity="center|top">
+
+            <include
+                android:id="@+id/includeViewAudioProgressBar"
+                layout="@layout/history_progressbar"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:layout_weight="1.2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:weightSum="1.0">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="bottom|center|left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewAudioName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/quick_medium"
+                        android:text="@string/save_files"
+                        android:textColor="@color/light_purple"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/textViewAudioDurationAndEnvironment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/quick_regular"
+                        android:maxLines="1"
+                        android:text="@string/save_files"
+                        android:textColor="@color/light_purple"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/txt_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/quick_regular"
+                        android:text="@string/save_files"
+                        android:textColor="@color/light_purple"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center|left|top">
+
+                    <ImageView
+                        android:id="@+id/more_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="22dp"
+                        android:src="@drawable/more_icon" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:weightSum="1.0">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:weightSum="1.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="1.0">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="bottom|center|left">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:fontFamily="@font/quick_regular"
+                                android:text="@string/minimum"
+                                android:textColor="@color/orange"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center|left|top">
+
+                            <TextView
+                                android:id="@+id/textViewAudioMin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:fontFamily="@font/quick_medium"
+                                android:text="@string/save_files"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/quick_medium"
+                                android:text="@string/db"
+                                android:textColor="@color/white"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@color/dark_blue_bg" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.34"
+                    android:weightSum="1.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="1.0">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="bottom|center|left">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:fontFamily="@font/quick_regular"
+                                android:text="@string/avg_speed"
+                                android:textColor="@color/green_turquoise"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center|left|top">
+
+                            <TextView
+                                android:id="@+id/textViewAudioAvg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:fontFamily="@font/quick_medium"
+                                android:text="@string/save_files"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/quick_medium"
+                                android:text="@string/db"
+                                android:textColor="@color/white"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@color/dark_blue_bg" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.33"
+                    android:weightSum="1.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="1.0">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="bottom|center|left">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:fontFamily="@font/quick_regular"
+                                android:text="@string/maximum"
+                                android:textColor="@color/green"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center|left|top">
+
+                            <TextView
+                                android:id="@+id/textViewAudioMax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:fontFamily="@font/quick_medium"
+                                android:text="@string/save_files"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/quick_medium"
+                                android:text="@string/db"
+                                android:textColor="@color/white"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

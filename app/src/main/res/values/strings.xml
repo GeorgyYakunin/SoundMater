@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Sound Meter</string>
+    <string name="time" translatable="false">%1$s</string>
+    <string name="mkajiswi" translatable="false">mkajiswi</string>
+    <string name="zero_char" translatable="false">0</string>
+    <string name="sbshsn" translatable="false">sbshsn</string>
+    <string name="x" translatable="false">X</string>
+    <string name="fiftyfour" translatable="false">54</string>
+
+    <string name="moreads">More+Apps</string>
+    <string name="activity_recBusyErr">Recorder is busy or permission to record is prohibited</string>
+    <string name="activity_recStartErr">Unable to start recording</string>
+    <string name="cancel">CANCEL</string>
+    <string name="duration_and_environment">Environment: %2$s</string>
+    <string name="duration_and_environment1">Duration: %1$s</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="gcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="name">Name: %1$s</string>
+    <string name="no">NO</string>
+    <string name="pause">PAUSE</string>
+    <string name="place_autocomplete_clear_button">Clear search</string>
+    <string name="place_autocomplete_search_hint">Search</string>
+    <string name="play">PLAY</string>
+    <string name="tagmanager_preview_dialog_button">Continue</string>
+    <string name="tagmanager_preview_dialog_message">Preview mode updated.</string>
+    <string name="tagmanager_preview_dialog_title">Preview</string>
+    <string name="wallet_buy_button_place_holder">Buy with Google</string>
+    <string name="yes">YES</string>
+    <string name="record_sound">Record Sound</string>
+    <string name="sound_meter">Sound Meter</string>
+    <string name="sound_meter_all_caps">SOUND METER</string>
+    <string name="with_the_sound_meter_app_you_can">With the sound meter app you can</string>
+    <string name="check_the_level_of_sound_in_decibels">check the level of sound in decibels.</string>
+    <string name="tone_generator">Tone Generator</string>
+    <string name="sound_info">Sound Info</string>
+    <string name="sound_meter_description">Sound-level meter is a device for measuring the intensity of noise, music, and other sounds.</string>
+    <string name="sound_meter_long_text">A typical meter consists of a microphone for picking up the sound and converting it into an electrical signal, followed by electronic circuitry for operating on this signal so that the desired characteristics can be measured.</string>
+    <string name="sound_meter_description_2">The indicating device is usually a meter calibrated to read the sound level in decibels (dB; a logarithmic unit used to measure the sound intensity).</string>
+    <string name="sound_meter_description_3">Threshold of hearing is about zero decibels for the average young listener, and threshold of pain (extremely loud sounds) is around 120 decibels, representing a power 1,000,000,000,000 (or 1012) times greater than zero decibels.</string>
+    <string name="sound_meter_description_4">0 healthy hearing threshold\\n 10 a pin dropping\\n20 rustling leaves\\n30 whisper\\n40 babbling brook\\n50 light traffic\\n60 conversational speechn\\n70 shower\\n75 toilet flushing\\n80 alarm clock\\n85 passing diesel truck\\n90 squeeze toy\\n95 inside subway car\\n100 motorcycle (riding)\\n105 sporting event\\n110 rock band\\n115 emergency vehicle siren\\n120 thunderclap\\n125 balloon popping\\n130 peak stadium crowd noise\\n135 air raid siren\\n140 jet engine at takeoff\\n145 firecracker\\n150 fighter jet launch\\n155 cap gun\\n160 shotgun|n165 .357 magnum revolver\\n170 safety airbag\\n175 howitzer cannon\\n180 rocket launch</string>
+    <string name="how_loud_and_how_long">How Loud and How Long</string>
+    <string name="sound_meter_description_5">One way that noise can permanently damage your hearing is by a single brief exposure to a high noise level, such as a firecracker going off near your ear. But hearing damage can also occur gradually at much lower levels of noise, if there is enough exposure over time. To protect your hearing, you\'ll want to limit your exposure to these moderately high noise levels as well, and give your ears a chance to recover after any period of noise exposure.</string>
+    <string name="maximum_recommended_noise_dose">Maximum Recommended Noise Dose</string>
+    <string name="sound_meter_description_6">Exposure Levels       Noise Level (dBA) Maximum Exposure Time per 24 Hours\\n85     8 hours\\n88     4 hours\\n91      2 hours\\n94      1 hour\\n97      30 minutes\\n100     15 minutes\\n103     7.5 minutes\\n106     3.7 minutes\\n109     112 seconds\\n112     56 seconds\\n115     28 seconds\\n118      14 seconds\\n121      7 seconds\\n 124    3 seconds\\n127      1 second\\n130–140       less than 1 second\\n140     NO EXPOSURE</string>
+    <string name="save_files">Save Files</string>
+    <string name="decibel_scale">Decibel Scale</string>
+    <string name="minimum">Minimum</string>
+    <string name="avg_speed">Avg Speed</string>
+    <string name="db">db</string>
+    <string name="maximum">Maximum</string>
+    <string name="calibrate">Calibrate</string>
+    <string name="threshold">Threshold</string>
+    <string name="history">History</string>
+    <string name="refresh">Refresh</string>
+    <string name="carrier_wave">Carrier Wave:</string>
+    <string name="modulator_wave">Modulator Wave:</string>
+    <string name="modulation_type">Modulation Type:</string>
+    <string name="activate_modulation">ACTIVATE MODULATION</string>
+    <string name="stop">STOP</string>
+    <string name="exit_app">Exit App?</string>
+    <string name="are_sure_exit">Are You Sure you want to exit this app?</string>
+    <string name="ad">Ad</string>
+    <string name="calibrate_metr">CALIBRATE METER</string>
+    <string name="error_correction">Error Correction</string>
+    <string name="performance_of_microphone_will_be">Performance of microphone will be</string>
+    <string name="different_for_each_device_so">different for each device so</string>
+    <string name="calibrate_before_use">calibrate before use.</string>
+    <string name="threshold_of_pain_thunder">120dB - Threshold of pain, Thunder</string>
+    <string name="concerts_screaming_child">110dB - Concerts, Screaming child</string>
+    <string name="motorcycle_slow_dryer">100dB - Motorcycle, Blow dryer</string>
+    <string name="diesel_truck_power_mower">90dB - Diesel truck, Power mower</string>
+    <string name="loud_music_alarm_clocks">80dB - Loud music, Alarm clocks</string>
+    <string name="busy_traffic_vacuum_cleaner">70dB - Busy traffic, Vacuum cleaner</string>
+    <string name="normal_conversation_at_3_ft">60dB - Normal conversation at 3 ft.</string>
+    <string name="quiet_office_moderate_rainfall">50dB - Quiet office, Moderate rainfall</string>
+    <string name="quiet_library_bird_calls">40dB - Quiet library, Bird calls</string>
+    <string name="whisper_quiet_rural_are">30dB - Whisper, Quiet rural are</string>
+    <string name="rustling_leaves_ticking_watch">20dB - Rustling leaves, Ticking watch</string>
+    <string name="almost_quiet_breathing">10dB - Almost quiet, Breathing</string>
+    <string name="set_threshold_notification"><![CDATA[Set Threshold &amp; Notification]]></string>
+    <string name="set_threshold">Set Threshold</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="sound">Sound</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="set">SET</string>
+    <string name="delete_all_audios">Delete all Audios?</string>
+    <string name="this_will_delete_all_recordings_from_your_history">This Will delete all recordings from your history</string>
+    <string name="delete_audio">Delete Audio?</string>
+    <string name="this_record_will_be_deleted_from_your_history">This record will be deleted from your history</string>
+    <string name="export_audio">Export Audio?</string>
+    <string name="this_recording_will_be_saved_on_your_device">This recording will be saved on your device</string>
+    <string name="rename_title">Rename Title</string>
+    <string name="internet_permission">android.permission.INTERNET</string>
+    <string name="internet_permission_description">-  This permission is required to access Internet.</string>
+    <string name="we_need_this_permission">- We need this permission to load advertisement and translate word</string>
+    <string name="permission_networkstate">android.permission.ACCESS_NETWORK_STATE</string>
+    <string name="permission_networkstate_description">-  This permission is required to access network.</string>
+    <string name="we_need_this_permission_networkstate">- We need this permission to get information about network.</string>
+    <string name="permission_record">android.permission.RECORD_AUDIO</string>
+    <string name="permission_record_description">-  This permission is required to access sound recording.</string>
+    <string name="we_need_this_permision_record">- We need this permission record noise sound</string>
+    <string name="delete">Delete</string>
+    <string name="share_app">Share app</string>
+    <string name="more_app">More App (Ads)</string>
+    <string name="rename">Rename</string>
+    <string name="get_started">get started</string>
+</resources>

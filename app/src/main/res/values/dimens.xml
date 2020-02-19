@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="imageViewActiveWidth">36.0dip</dimen>
+    <dimen name="imageViewNotActiveWidth">30.0dip</dimen>
+
+    <dimen name="slim_design_height">6.0dip</dimen>
+
+</resources>
